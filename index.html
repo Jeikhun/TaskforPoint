@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,500;0,700;1,100;1,200;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Quicksand:wght@400;500;600&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,500;0,700;1,100;1,200;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main-container">
+        <nav class="navbar">
+          <a href="">
+            <h1>JJ Calculate</h1>
+            <img src="./image/bmw-logo-png-transparent.png" alt="" />
+          </a>
+          <div class="navigation">
+            <a href="">Calculate BMI</a>
+            <a href="">What`s the BMI?</a>
+            <a href="">BMI History</a>
+          </div>
+        </nav>
+        <div class="information-modal">
+          <div>
+            <img
+              src="	https://dadacalculate.netlify.app/images/resultImage.png"
+              alt=""
+            />
+            <div class="contents">
+              <h1>Hello <span></span>,your body mass index is <span></span></h1>
+              <h2>You are <span></span></h2>
+              <h2>
+                We recommend working with a dietitian to gain a healthy weight.
+              </h2>
+              <h2>
+                Click to see the <span>diet List</span> specially prepared for you. 👉
+                <button>Click me</button>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="information-container"></div>
+        <section class="first">
+          <img src="./image/health.jpg" alt="" />
+          <div class="forms">
+            <h1 class="calculateBmi">Calculate BMI</h1>
+            <form action="">
+              <div class="information">
+                <img src="./image/pencil-svgrepo-com.svg" alt="" />
+                <input type="text" placeholder="Your name and surname ..." />
+              </div>
+              <div>
+                <img src="./image/weightlifter-weight-svgrepo-com.svg" alt="" />
+                <input type="number" placeholder="Your weight ..." />
+                <p>kg</p>
+              </div>
+              <div>
+                <img src="./image/ruler-svgrepo-com.svg" alt="" />
+                <input type="number" placeholder="Your height ..." />
+                <p>cm</p>
+              </div>
+              <button class="button">Calculate</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

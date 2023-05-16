@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+.main-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(129, 212, 250);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.navbar h1{
+    font-family: "Dancing Script", cursive;
+    transform: translateY(5px);
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+}
+.navbar a{
+    background-color: transparent;
+    /* color: #1890ff; */
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: color .3s;
+}
+.navigation{
+    margin-left: auto;
+    margin-right: 20px;
+}
+.navigation>a{
+    color: white;
+    font-family: "Dancing Script", cursive;
+    font-size: 24px;
+    padding: 15px;
+    margin-left: 40px;
+    transition: all 0.4s ease 0s;
+}
+.first{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+}
+.first>img{
+    width: 600px;
+    float: left;
+    transform: translateY(-65px);
+}
+.forms{
+    width: calc(100% - 600px);
+    float: left;
+    transition: all 0.2s ease 0s;
+    padding: 40px 50px;
+}
+.forms h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.forms>form>div{
+    width: 100%;
+    position: relative;
+}
+.forms>form>div img{
+    width: 18px;
+    font-size: 27px;
+    left: 15px;
+    position: absolute;
+    top: 15px;
+}
+.forms>form>div input{
+    width: 100%;
+    padding: 13px 40px 13px 45px;
+    border: 1px solid rgb(129, 212, 250);
+    outline: none;
+    transition: all 0.2s ease 0s;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    box-shadow: rgba(129, 212, 250, 0.45) 0px 5px 15px;
+}
+.forms>form>div p {
+    font-size: 17px;
+    position: absolute;
+    z-index: 1000;
+    top: 13px;
+    right: 15px;
+    font-family: Arvo, serif;
+    color: rgb(140, 140, 140);
+}
+.button{
+    width: 100%;
+    padding: 4px;
+    border: none;
+    font-family: "Dancing Script", cursive;
+    color: white;
+    font-weight: 800;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: rgb(129, 212, 250);
+    transition: all 0.2s ease 0s;
+}
+.navbar>a>img{
+    display: none;
+}
+@media screen and (max-width: 1750px) {
+    .first{
+        padding-top: 130px;
+        width: 85%;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .first{
+        padding-top: 110px;
+        width: 95%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .first{
+        padding-top: 90px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .first{
+        padding-top: 40px;
+        text-align: center;
+    }
+    .first>img{
+        float: none;
+        width: 350px;
+        max-width: 90%;
+        transform: translateY(0px);
+    }
+    .forms{
+        float: none;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 35px 45px;
+    }
+    .forms>h1{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .navbar h1{
+        display: none;
+    }
+    .navbar>a>img{
+        width: 40px;
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 800px) {
+    .navigation>a{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .navigation>a{
+        font-size: 20px;
+    margin-left: 20px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .navigation>a{
+        font-size: 19px;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .navigation>a{
+        display: block;
+        padding: 3px 5px;
+        font-size: 18px;
+    }
+}
+.information-modal{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    display: none;
+}
+.information-modal>div{
+    display: inline-block;
+}
+.information-modal img{
+    width: 750px;
+    float: left;
+    transform: translateY(-70px);
+}
+.contents{
+    width: calc(100% - 750px);
+    float: left;
+    padding: 40px 30px;
+    transform: translateY(40px);
+    display: none;
+}
+.contents>h1{
+    font-size: 40px;
+    margin: 0px;
+    font-family: "Dancing Script", cursive;
+}
+.contents h2:nth-child(2){
+    font-size: 35px;
+    margin: 0px;
+    font-family: "Dancing Script", cursive !important;
+}
+.contents h2:nth-child(3){
+    font-family: Arvo, serif;
+    font-size: 22px;
+    margin-top: 20px;
+}
+.contents h2:last-child{
+    font-family: Arvo, serif;
+    font-size: 22px;
+    margin-top: 20px;
+}
+.contents h2:last-child span{
+    font-family: Arvo, serif;
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
